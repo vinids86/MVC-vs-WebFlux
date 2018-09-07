@@ -1,6 +1,7 @@
 package br.com.saraiva.postmusic;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
@@ -27,6 +28,7 @@ public class PostHandler {
         this.spotifyService = spotifyService;
     }
 
+    @NonNull
     Mono<ServerResponse> postMusic(ServerRequest request) {
 
         final Flux<String> flux = apply(spotifyService.getSongs())
