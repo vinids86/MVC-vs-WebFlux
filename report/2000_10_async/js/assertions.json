@@ -1,0 +1,10 @@
+{
+  "simulation": "gatling.ApiGatlingSimulationTest",
+  "simulationId": "apigatlingsimulationtest",
+  "start": 1536209313398,
+  "description": "null",
+  "scenarios": ["PostSongs"],
+  "assertions": [
+
+  ]
+}
